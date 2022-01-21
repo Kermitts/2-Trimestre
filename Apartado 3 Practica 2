@@ -1,0 +1,29 @@
+#creacion directorios
+  mkdir proyectos
+  mkdir proyectos/pruebas/
+  mkdir proyectos/src/
+
+#creacion ficheros
+  #en /proyectos
+    touch proyecto1
+    touch proyecto2
+  
+  #en /proyectos/pruebas
+    touch prueba1
+    touch prueba2
+    
+  #en /proyectos/src
+    touch app1.sh
+    touch app2.sh
+
+#Creacion grupos
+  groupadd DepSinformacion
+  groupadd DepDessarrollo
+  groupadd DepExplotacion
+
+#Creacion usuarios y asignarlos a un grupo
+  useradd -a DepSinformacion -d /home/usu1 -m -s /bin/bash usu_sininformacion
+  useradd -a DepDesarrollo -d /home/usu2 -m -s /bin/bash usu_desarrollo
+  useradd -a DepExplotacion -d /home/usu3 -m -s /bin/bash usu_explotacion
+
+
