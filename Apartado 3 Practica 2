@@ -37,6 +37,9 @@
     getfacl /proyectos/src
     getfacl /proectos/pruebas
 
-    
+#Crear contraseña para los usuarios
+  passwd usu_sinformacion
+  passwd usu_desarrollo
+  passwd usu_explotacion
     
     
