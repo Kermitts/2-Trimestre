@@ -26,4 +26,17 @@
   useradd -a DepDesarrollo -d /home/usu2 -m -s /bin/bash usu_desarrollo
   useradd -a DepExplotacion -d /home/usu3 -m -s /bin/bash usu_explotacion
 
+#El ACL
+  #para asignar el ACL en directorios 
+    setfacl -m d:g:DepSinformacion:rwx /proyectos
+    setfacl -m d:g:DepDesarrollo:rwx /proyectos/src
+    setfacl -m d:g:DepExplotacion:rx /proyectos/src
+    setfacl -m d:g:DepExplotacion:rwx /proyectos/pruebas
+  #para comprobar que esta bien el ACL
+    getfacl /proyectos
+    getfacl /proyectos/src
+    getfacl /proectos/pruebas
 
+    
+    
+    
