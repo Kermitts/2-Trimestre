@@ -7,7 +7,7 @@ tar -czvf /home/$usuario/$usuario$fecha /home/$usuario/
   #!/bin/bash
   usuario='root'
   fecha='date +%02%02%22'
-  * * * * * tar -czvf /root /root
+  00 19 * * * tar -czvf /root /root
 
 #Punto 2
   
