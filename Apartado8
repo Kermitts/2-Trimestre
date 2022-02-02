@@ -1,13 +1,10 @@
-#!/bin/bash
-usuario=`whoami`
-fecha=`date +%d%m%y`
-tar -czvf /home/$usuario/$usuario$fecha /home/$usuario/
 #He iniciado sesion con el usuario root
+
 #Punto 1
   #!/bin/bash
   usuario='root'
   fecha='date +%02%02%22'
-  00 19 * * * tar -czvf /root /root
+  00 19 * * 1-2-3-4-5 tar -czvf /root /root
 
 #Punto 2
   
