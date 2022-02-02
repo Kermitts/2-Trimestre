@@ -7,10 +7,14 @@
   00 19 * * 1-2-3-4-5 tar -czvf /root /root
 
 #Punto 2
-  #!/bin/bash
-  #Poner la ip que deseamos testear
-  gateway="192.168.209.240"
-  log="/home/`whoami`/regPing-to-computer.txt"oi
+#!/bin/bash
+30 16 * * * ssh administrador@192.168.209.239
+ 
+
+ #!/bin/bash
+ 
+  gateway="192.168.209.239"
+  log="/root/regPing-to-computer.txt"oi
   error="/home/`whoami`/errorPing-to-computer.txt"
   ping=`ping -c 3 $gateway`
  
